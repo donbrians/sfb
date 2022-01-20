@@ -1,10 +1,10 @@
-##Introduction to the Poject
+## Introduction to the Poject
 
 this project is based on PHP7.0
 it is not built on any framework, but it encompasses all the neccessary technologies to show OOP, function re-use
 
 
-##Technology Stack Used
+## Technology Stack Used
 it uses mysql databases with the following structure
 
 
@@ -26,10 +26,10 @@ CREATE TABLE `generated_codes` (
 ```
 
 
-##Application Entry Point
+## Application Entry Point
 index.php
 
-##URI Structure
+## URI Structure
 http://localhost/safeboda/index.php/code-generation/generate
 
 ## URI Break Down
@@ -39,10 +39,10 @@ index.php -- entry file
 code-generation -- application context path, controller name
 generate -- action to perform
 
-##Running the project
+## Running the project
 Copy and paste the project files into a PHP based server with mysql installed on it, create a database called safe_boda_codes, run the sql script as shown in the database section and you are done.
 
-##Classes needed to run the project
+## Classes needed to run the project
 make sure you have the following includes in your index.php
 
 ```Php
@@ -54,7 +54,7 @@ include "database/DatabaseConnection.php";
 
 ```
 
-##Request Structure
+## Request Structure
 
 the application relies on Json Post for all the end points since it is supposed to be consumed as an API, the request structure takes upon the following struture
 
@@ -212,7 +212,7 @@ the JSON representation would be as shown below
 
 ```
 
-##Expected Response
+## Expected Response
 ```json
 
 {
@@ -224,5 +224,5 @@ the JSON representation would be as shown below
 ```
 
 
-##Expected Response Codes
+## Expected Response Codes
 All the response codes are standard HTTP Codes
